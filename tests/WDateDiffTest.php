@@ -13,7 +13,7 @@ use PHPUnit\Framework\TestCase;
 final class WDateDiffTest extends TestCase
 {
     /**
-     * @test
+     *
      */
     public function testIsEqual(): void
     {
@@ -24,7 +24,7 @@ final class WDateDiffTest extends TestCase
     }
 
     /**
-     * @test
+     *
      */
     public function testHowManyDaysBefore()
     {
@@ -35,7 +35,7 @@ final class WDateDiffTest extends TestCase
     }
 
     /**
-     * @test
+     *
      */
     public function testHowManyDaysBeforeError()
     {
@@ -48,7 +48,7 @@ final class WDateDiffTest extends TestCase
     }
 
     /**
-     * @test
+     *
      */
     public function testHowManyDaysAfter()
     {
@@ -59,7 +59,7 @@ final class WDateDiffTest extends TestCase
     }
 
     /**
-     * @test
+     *
      */
     public function testHowManyDaysAfterError()
     {

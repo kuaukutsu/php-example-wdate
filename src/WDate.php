@@ -2,6 +2,8 @@
 
 namespace kuaukutsu\ExampleWdate;
 
+use DateTimeImmutable;
+
 /**
  * Class WDate
  * @package kuaukutsu\ExampleWdate
@@ -39,7 +41,7 @@ class WDate
     private $second;
 
     /**
-     * @var \DateTimeImmutable
+     * @var DateTimeImmutable
      */
     private $datetime;
 
@@ -106,12 +108,12 @@ class WDate
     }
 
     /**
-     * @return bool|\DateTimeImmutable
+     * @return bool|DateTimeImmutable
      */
     public function getDatetime()
     {
         if ($this->datetime === null) {
-            $this->datetime = \DateTimeImmutable::createFromFormat('Y-m-d H:i:s',
+            $this->datetime = DateTimeImmutable::createFromFormat('Y-m-d H:i:s',
                 sprintf('%s-%s-%s %s:%s:%s',
                     $this->year ?? date('Y'),
                     $this->month ?? date('m'),
