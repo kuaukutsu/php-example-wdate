@@ -6,7 +6,6 @@ use DateTimeImmutable;
 
 /**
  * Class WDate
- * @package kuaukutsu\ExampleWdate
  */
 class WDate
 {

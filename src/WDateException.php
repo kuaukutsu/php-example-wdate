@@ -2,11 +2,13 @@
 
 namespace kuaukutsu\ExampleWdate;
 
+use LogicException;
+
 /**
  * Class WDateException
  * @package kuaukutsu\ExampleWdate
  */
-class WDateException extends \LogicException
+class WDateException extends LogicException
 {
     /**
      * WDateException constructor.
