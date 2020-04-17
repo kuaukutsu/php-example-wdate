@@ -22,9 +22,9 @@ jobs:
     - name: composer install missing files
       run: composer install
     - name: run tests
-      run: ./vendor/bin/phpunit > output.txt
-    - name: save output
-      uses: actions/upload-artifact@v1
-      with:
-        name: output
-        path: output.txt
+      run: ./vendor/bin/phpunit
+#    - name: save output
+#      uses: actions/upload-artifact@v1
+#      with:
+#        name: output
+#        path: output.txt
